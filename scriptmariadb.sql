@@ -5,7 +5,7 @@ CREATE USER marcosvitor IDENTIFIED BY 'marcos123';
 
 CREATE DATABASE uvv;
 
-GRANT ALL ON . TO henrique;
+GRANT ALL ON . TO marcosvitor;
 
 EXIT
 
