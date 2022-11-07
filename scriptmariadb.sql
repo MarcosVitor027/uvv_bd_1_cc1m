@@ -3,7 +3,6 @@ mysql -u root -p
 computacao@raiz
 CREATE USER marcosvitor IDENTIFIED BY 'marcos123';
 
-CREATE DATABASE uvv;
 
 GRANT ALL ON *.* TO marcosvitor;
 
@@ -12,7 +11,9 @@ EXIT
 mysql -u marcosvitor -p
 marcos123
 
-USE uvv; 
+CREATE database if not exists uvv;
+USE uvv;
+
 CREATE TABLE cargos (
                 id_cargo VARCHAR(10) NOT NULL,
                 cargo VARCHAR(35) NOT NULL,
